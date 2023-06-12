@@ -1,6 +1,6 @@
 import { AnimatePresence } from 'framer-motion';
 import { lazy, Suspense } from 'react';
-import { BrowserRouter as Router, Route, Routes, Switch  } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop';
 import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
@@ -37,7 +37,7 @@ function App() {
 					<ScrollToTop />
 					<AppHeader />
 					<Suspense fallback={""}>
-						<Switch>
+						<Routes>
 							<Route path="/" element={<Home />} />
 							<Route path="projects" element={<Projects />} />
 							<Route
@@ -73,7 +73,7 @@ function App() {
 
 							<Route path="about" element={<About />} />
 							<Route path="contact" element={<Contact />} />
-						</Switch>
+						</Routes>
 					</Suspense>
 					<AppFooter />
 				</Router>
