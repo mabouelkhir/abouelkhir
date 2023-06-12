@@ -1,5 +1,7 @@
 import ProjectsGrid from '../components/projects/ParaGrid';
 import { ProjectsProvider } from '../context/ParaContext';
+import React, { useEffect } from 'react';
+import { useHistory } from 'react-router-dom';
 
 const Para = () => {
 	const history = useHistory();
