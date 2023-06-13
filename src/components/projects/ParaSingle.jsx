@@ -12,7 +12,7 @@ const ParaSingle = ({ title, category, image, link }) => {
 				delay: 0.15,
 			}}
 		>
-			<Link to={link} aria-label="Single Project">
+			<a href={link} aria-label="Single Project">
 				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
 					<div>
 						<img
@@ -30,7 +30,7 @@ const ParaSingle = ({ title, category, image, link }) => {
 						</span>
 					</div>
 				</div>
-			</Link>
+			</a>
 		</motion.div>
 	);
 };
