@@ -46,7 +46,7 @@ const AppHeader = () => {
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
-						<Link to="/">
+						<a href="/">
 							{activeTheme === 'dark' ? (
 								<img
 									src={logoDark}
@@ -60,7 +60,7 @@ const AppHeader = () => {
 									alt="Dark Logo"
 								/>
 							)}
-						</Link>
+						</a>
 					</div>
 
 					{/* Theme switcher small screen */}
@@ -107,34 +107,34 @@ const AppHeader = () => {
 							: 'hidden'
 					}
 				>
-					<Link
-						to="/projects"
+					<a
+						href="/projects"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
 					>
 						Projects
-					</Link>
-					<Link
-						to="/extracurricular_activities"
+					</a>
+					<a
+						href="/extracurricular_activities"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="About Me"
 					>
 						Extracurricular Activities
-					</Link>
-					<Link
-						to="/about"
+					</a>
+					<a
+						href="/about"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="About Me"
 					>
 						About Me
-					</Link>
-					<Link
-						to="/contact"
+					</a>
+					<a
+						href="/contact"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="Contact"
 					>
 						Contact
-					</Link>
+					</a>
 					
 				</div>
 
@@ -149,7 +149,6 @@ const AppHeader = () => {
 					</a>
 					<a
 						href="/extracurricular_activities"
-						to="/extracurricular_activities"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="About Me"
 					>
